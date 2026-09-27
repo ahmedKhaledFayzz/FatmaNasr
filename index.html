@@ -11,15 +11,15 @@
 <meta property="og:url" content="https://ahmedkhaledfayzz.github.io/FatmaNasr/">
 <meta property="og:title" content="Fatma Nasr | Dental Ceramics Portfolio">
 <meta property="og:description" content="Dental ceramics technician — zirconia &amp; E.max, layering, 3D stain &amp; glaze, micro texture and hand polishing.">
-<meta property="og:image" content="https://ahmedkhaledfayzz.github.io/FatmaNasr/assets/og-cover.jpg">
+<meta property="og:image" content="https://ahmedkhaledfayzz.github.io/FatmaNasr/assets/share-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Signed anterior ceramic restorations by Fatma Nasr">
+<meta property="og:image:alt" content="Fatma Nasr, dental ceramics technician, with a signed anterior ceramic case">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23173f39'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23f7dfb8' text-anchor='middle'%3EFN%3C/text%3E%3C/svg%3E">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preload" as="image" href="assets/work/signature.jpg">
+<link rel="preload" as="image" href="assets/fatma-portrait.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -200,16 +200,38 @@
   }
   .tooth-mark::before{left:28px; transform:rotate(8deg);}
   .tooth-mark::after{right:28px; transform:rotate(-8deg);}
-  .hero-photo{
+  .hero-portrait{
     position:relative;
     margin:8px 0 18px;
-    aspect-ratio:5 / 4;
-    overflow:hidden;
-    border:1px solid rgba(255,250,240,0.25);
+    aspect-ratio:4 / 5;
+    padding:8px;
+    border:1px solid rgba(247,223,184,0.45);
     box-shadow:0 28px 60px rgba(0,0,0,0.30);
+  }
+  .hero-portrait img{display:block; width:100%; height:100%; object-fit:cover; object-position:50% 30%;}
+  .signature{
+    position:relative;
+    margin:0 0 34px;
+    aspect-ratio:21 / 8;
+    overflow:hidden;
+    background:#000;
+    border:1px solid rgba(31,48,43,0.13);
     cursor:zoom-in;
   }
-  .hero-photo img{display:block; width:100%; height:100%; object-fit:cover; object-position:50% 80%;}
+  .signature img{display:block; width:100%; height:100%; object-fit:cover; object-position:50% 82%;}
+  .signature.shot figcaption{
+    position:absolute;
+    top:18px; left:20px; right:auto; bottom:auto;
+    padding:6px 12px;
+    background:rgba(0,0,0,0.35);
+    padding:6px 12px;
+    border:1px solid rgba(247,223,184,0.5);
+    color:#f7dfb8;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.24em;
+    text-transform:uppercase;
+  }
   .panel-stat{
     position:relative;
     border-top:1px solid rgba(255,250,240,0.20);
@@ -524,7 +546,12 @@
     .hero-panel{min-height:340px; padding:34px 28px;}
     aside{border-right:none; border-bottom:1px solid var(--line);}
     .work{padding:38px 28px;}
-    .hero-photo{max-width:340px; width:100%; margin:0 auto 18px;}
+    .hero-panel{order:-1;}
+    .hero-portrait{max-width:260px; width:100%; margin:0 auto 18px;}
+    .panel-stats{display:grid; grid-template-columns:repeat(3, minmax(0, 1fr)); gap:14px;}
+    .panel-stat{margin-top:0; padding-top:14px;}
+    .panel-stat strong{font-size:26px;}
+    .panel-stat span{font-size:10.5px; letter-spacing:0.05em;}
   }
   @media (max-width:640px){
     body{background:var(--porcelain);}
@@ -532,6 +559,7 @@
     .cert-grid{grid-template-columns:1fr;}
     .work-head{display:block;}
     .work-head p{margin-top:10px;}
+    .signature{aspect-ratio:16 / 9; margin-bottom:26px;}
     .gallery{grid-template-columns:repeat(2, minmax(0, 1fr)); gap:8px;}
     .gallery.detail{grid-template-columns:repeat(2, minmax(0, 1fr)); grid-auto-rows:150px;}
     .shot figcaption{font-size:10px; padding:20px 10px 8px;}
@@ -545,9 +573,11 @@
     @page{size:A4; margin:12mm;}
     body{background:#fff;}
     .sheet{width:100%; margin:0; border:none; box-shadow:none; background:#fff;}
-    header{min-height:auto; grid-template-columns:1fr;}
+    header{min-height:auto; grid-template-columns:1fr 150px; gap:24px;}
     .hero-copy{padding:0 0 24px;}
-    .hero-panel{display:none;}
+    .hero-panel{order:2; background:none; padding:0; justify-content:flex-start;}
+    .hero-panel::before,.panel-stats{display:none;}
+    .hero-portrait{margin:0; box-shadow:none; padding:0; border:1px solid var(--line);}
     main{grid-template-columns:0.9fr 1.55fr;}
     aside,.content{padding:22px 22px 0 0;}
     aside{border-right:1px solid var(--line); background:#fff;}
@@ -581,8 +611,8 @@
       </div>
     </div>
     <div class="hero-panel" aria-label="Portfolio visual summary">
-      <figure class="hero-photo shot" tabindex="0" role="button"><img src="assets/work/signature.jpg" width="1280" height="728" alt="Signed anterior ceramic restorations by Fatma Nasr" fetchpriority="high"></figure>
-      <div>
+      <figure class="hero-portrait"><img src="assets/fatma-portrait.jpg" width="800" height="1000" alt="Fatma Nasr, dental ceramics technician" fetchpriority="high"></figure>
+      <div class="panel-stats">
         <div class="panel-stat"><strong>04</strong><span>Dental labs experience</span></div>
         <div class="panel-stat"><strong>05</strong><span>Specialized ceramic courses</span></div>
         <div class="panel-stat"><strong>360°</strong><span>Finishing, texture, shade and glaze</span></div>
@@ -677,6 +707,7 @@
       <h2>Selected Work</h2>
       <p>A selection of finished anterior restorations and close-up details — shade, translucency, surface texture and final glaze. Tap any photo to enlarge.</p>
     </div>
+    <figure class="signature shot" tabindex="0" role="button"><img src="assets/work/signature.jpg" width="1280" height="728" alt="Signature Case · Signed anterior restorations" loading="lazy"><figcaption>Signature Case</figcaption></figure>
     <div class="work-label">Finished Cases</div>
     <div class="gallery">
           <figure class="shot" tabindex="0" role="button"><img src="assets/work/case-01.jpg" width="1280" height="854" alt="Anterior Esthetics · Case 01" loading="lazy"><figcaption>Case 01</figcaption></figure>
