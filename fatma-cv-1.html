@@ -5,6 +5,21 @@
 <title>Fatma Mohamed Abd Elhafez Nasr | Dental Ceramics Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Professional dental ceramics portfolio for Fatma Mohamed Abd Elhafez Nasr, specializing in zirconia, E.max, layering, stain and glaze, finishing, texture, and esthetic dental restorations.">
+<link rel="canonical" href="https://ahmedkhaledfayzz.github.io/FatmaNasr.github.io/">
+<meta name="theme-color" content="#173f39">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://ahmedkhaledfayzz.github.io/FatmaNasr.github.io/">
+<meta property="og:title" content="Fatma Nasr | Dental Ceramics Portfolio">
+<meta property="og:description" content="Dental ceramics technician — zirconia &amp; E.max, layering, 3D stain &amp; glaze, micro texture and hand polishing.">
+<meta property="og:image" content="https://ahmedkhaledfayzz.github.io/FatmaNasr.github.io/assets/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Signed anterior ceramic restorations by Fatma Nasr">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23173f39'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23f7dfb8' text-anchor='middle'%3EFN%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/work/signature.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -120,6 +135,31 @@
     background:var(--teal);
     border-radius:50%;
   }
+  .actions{display:flex; flex-wrap:wrap; gap:10px; margin-top:26px;}
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    min-height:42px;
+    padding:9px 18px;
+    border:1px solid var(--teal-deep);
+    background:transparent;
+    color:var(--teal-deep);
+    font:500 14px 'Jost', Arial, sans-serif;
+    letter-spacing:0.06em;
+    text-decoration:none;
+    cursor:pointer;
+    transition:background .2s ease, color .2s ease;
+  }
+  .btn:hover{background:var(--teal-deep); color:var(--ivory);}
+  .btn-primary{background:var(--teal-deep); color:var(--ivory);}
+  .btn-primary:hover{background:var(--teal);}
+  .contact-strip a{color:inherit; text-decoration:none;}
+  .contact-strip a span{width:100%; transition:border-color .2s ease;}
+  .contact-strip a:hover span{border-color:var(--teal);}
+  .btn:focus-visible,
+  .contact-strip a:focus-visible,
+  .shot:focus-visible,
+  .lightbox button:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
   .hero-panel{
     position:relative;
     overflow:hidden;
@@ -515,7 +555,7 @@
     .work{padding:22px 0 0; background:#fff; break-before:page;}
     .shot{break-inside:avoid; cursor:default;}
     .shot img{transform:none !important;}
-    .lightbox{display:none !important;}
+    .lightbox,.actions{display:none !important;}
     footer{padding:18px 0 0;}
   }
 </style>
@@ -529,14 +569,19 @@
       <div class="role">Dental Ceramics &amp; Esthetics Technician</div>
       <p class="hero-lede">A precision-focused dental ceramics technician specializing in zirconia and E.max restorations, natural layering, 3D stain and glaze, finishing, micro texture, and hand polishing for high-esthetic crowns and veneers.</p>
       <div class="meta-row">
-        <span>Born June 2, 1999</span>
+        <span>Born February 6, 1999</span>
         <span>6th of October City, Egypt</span>
         <span>Zirconia &amp; E.max Specialist</span>
         <span>Arabic Native / English Very Good</span>
       </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://wa.me/201096643797" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="tel:+201096643797">Call</a>
+        <button class="btn" type="button" onclick="window.print()">Download CV (PDF)</button>
+      </div>
     </div>
     <div class="hero-panel" aria-label="Portfolio visual summary">
-      <figure class="hero-photo shot"><img src="assets/work/signature.jpg" alt="Signed anterior ceramic restorations by Fatma Nasr"></figure>
+      <figure class="hero-photo shot" tabindex="0" role="button"><img src="assets/work/signature.jpg" width="1280" height="728" alt="Signed anterior ceramic restorations by Fatma Nasr" fetchpriority="high"></figure>
       <div>
         <div class="panel-stat"><strong>04</strong><span>Dental labs experience</span></div>
         <div class="panel-stat"><strong>05</strong><span>Specialized ceramic courses</span></div>
@@ -553,6 +598,8 @@
       <section>
         <div class="section-title">Contact</div>
         <div class="contact-strip">
+          <a href="tel:+201096643797"><span>+20 10 96643797</span></a>
+          <a href="https://wa.me/201096643797" target="_blank" rel="noopener"><span>WhatsApp: +20 10 96643797</span></a>
           <span>6th of October City, Egypt</span>
           <span>Open to dental lab opportunities</span>
           <span><a href="#work" style="color:inherit">Case portfolio — see Selected Work</a></span>
@@ -632,20 +679,20 @@
     </div>
     <div class="work-label">Finished Cases</div>
     <div class="gallery">
-          <figure class="shot"><img src="assets/work/case-01.jpg" alt="Anterior Esthetics · Case 01" loading="lazy"><figcaption>Case 01</figcaption></figure>
-          <figure class="shot"><img src="assets/work/case-02.jpg" alt="Anterior Esthetics · Case 02" loading="lazy"><figcaption>Case 02</figcaption></figure>
-          <figure class="shot"><img src="assets/work/case-03.jpg" alt="Anterior Esthetics · Case 03" loading="lazy"><figcaption>Case 03</figcaption></figure>
-          <figure class="shot"><img src="assets/work/case-04.jpg" alt="Anterior Esthetics · Case 04" loading="lazy"><figcaption>Case 04</figcaption></figure>
-          <figure class="shot"><img src="assets/work/case-05.jpg" alt="Anterior Esthetics · Case 05" loading="lazy"><figcaption>Case 05</figcaption></figure>
-          <figure class="shot"><img src="assets/work/case-06.jpg" alt="Anterior Esthetics · Case 06" loading="lazy"><figcaption>Case 06</figcaption></figure>
+          <figure class="shot" tabindex="0" role="button"><img src="assets/work/case-01.jpg" width="1280" height="854" alt="Anterior Esthetics · Case 01" loading="lazy"><figcaption>Case 01</figcaption></figure>
+          <figure class="shot" tabindex="0" role="button"><img src="assets/work/case-02.jpg" width="1600" height="958" alt="Anterior Esthetics · Case 02" loading="lazy"><figcaption>Case 02</figcaption></figure>
+          <figure class="shot" tabindex="0" role="button"><img src="assets/work/case-03.jpg" width="1280" height="812" alt="Anterior Esthetics · Case 03" loading="lazy"><figcaption>Case 03</figcaption></figure>
+          <figure class="shot" tabindex="0" role="button"><img src="assets/work/case-04.jpg" width="1280" height="856" alt="Anterior Esthetics · Case 04" loading="lazy"><figcaption>Case 04</figcaption></figure>
+          <figure class="shot" tabindex="0" role="button"><img src="assets/work/case-05.jpg" width="1280" height="812" alt="Anterior Esthetics · Case 05" loading="lazy"><figcaption>Case 05</figcaption></figure>
+          <figure class="shot" tabindex="0" role="button"><img src="assets/work/case-06.jpg" width="1280" height="864" alt="Anterior Esthetics · Case 06" loading="lazy"><figcaption>Case 06</figcaption></figure>
     </div>
     <div class="work-label">Details &amp; Process</div>
     <div class="gallery detail">
-          <figure class="shot tall"><img src="assets/work/detail-arches.jpg" alt="Upper &amp; Lower Arches" loading="lazy"><figcaption>Upper &amp; Lower Arches</figcaption></figure>
-          <figure class="shot tall"><img src="assets/work/detail-lateral.jpg" alt="Lateral View · Contour" loading="lazy"><figcaption>Lateral View · Contour</figcaption></figure>
-          <figure class="shot big"><img src="assets/work/detail-texture.jpg" alt="Surface Texture &amp; Glaze" loading="lazy"><figcaption>Surface Texture &amp; Glaze</figcaption></figure>
-          <figure class="shot wide"><img src="assets/work/detail-profile.jpg" alt="Profile · Translucency" loading="lazy"><figcaption>Profile · Translucency</figcaption></figure>
-          <figure class="shot wide"><img src="assets/work/design-stage.jpg" alt="Design Stage" loading="lazy"><figcaption>Design Stage</figcaption></figure>
+          <figure class="shot tall" tabindex="0" role="button"><img src="assets/work/detail-arches.jpg" width="1214" height="1586" alt="Upper &amp; Lower Arches" loading="lazy"><figcaption>Upper &amp; Lower Arches</figcaption></figure>
+          <figure class="shot tall" tabindex="0" role="button"><img src="assets/work/detail-lateral.jpg" width="572" height="1280" alt="Lateral View · Contour" loading="lazy"><figcaption>Lateral View · Contour</figcaption></figure>
+          <figure class="shot big" tabindex="0" role="button"><img src="assets/work/detail-texture.jpg" width="1112" height="1280" alt="Surface Texture &amp; Glaze" loading="lazy"><figcaption>Surface Texture &amp; Glaze</figcaption></figure>
+          <figure class="shot wide" tabindex="0" role="button"><img src="assets/work/detail-profile.jpg" width="1290" height="587" alt="Profile · Translucency" loading="lazy"><figcaption>Profile · Translucency</figcaption></figure>
+          <figure class="shot wide" tabindex="0" role="button"><img src="assets/work/design-stage.jpg" width="1280" height="656" alt="Design Stage" loading="lazy"><figcaption>Design Stage</figcaption></figure>
     </div>
   </section>
   <footer><strong>Fatma Mohamed Abd Elhafez Nasr</strong><span>Dental Ceramics Portfolio</span></footer>
@@ -666,9 +713,17 @@
       var s=shots[i].querySelector('img');
       img.src=s.src; img.alt=s.alt; cap.textContent=s.alt;
       lb.classList.add('open');
+      lb.querySelector('.lb-close').focus();
     }
-    function close(){lb.classList.remove('open');}
-    shots.forEach(function(s,n){s.addEventListener('click',function(){show(n);});});
+    var last=null;
+    function close(){lb.classList.remove('open'); if(last) last.focus();}
+    shots.forEach(function(s,n){
+      s.setAttribute('aria-label','Enlarge photo: '+s.querySelector('img').alt);
+      s.addEventListener('click',function(){last=s; show(n);});
+      s.addEventListener('keydown',function(e){
+        if(e.key==='Enter'||e.key===' '){e.preventDefault(); last=s; show(n);}
+      });
+    });
     lb.querySelector('.lb-close').onclick=close;
     lb.querySelector('.lb-prev').onclick=function(e){e.stopPropagation(); show(i-1);};
     lb.querySelector('.lb-next').onclick=function(e){e.stopPropagation(); show(i+1);};
